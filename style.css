@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h3 {
+  text-align: center;
+  padding: 50px;
+}
+.cal-area,
+.result-area {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  margin: 0 30px;
+  gap: 10px;
+}
+button {
+  width: 23.5%;
+}
