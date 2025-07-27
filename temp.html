@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Konvata - Basic Calculator</title>
+    <title>Konvata - Temperature Converter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,21 +12,25 @@
       <ul>
         <li><a href="index.html">Basic Calculator</a></li>
         <li><a href="area.html">Area Converter</a></li>
-        <li><a href="perimeter.html">Perimeter Converter</a></li>
-        <li><a href="temp.html">Temperature Converter</a></li>
+        <li><a href="">Perimeter Converter</a></li>
+        <li><a href="">Temperature Converter</a></li>
         <li><a href="">Currency Converter</a></li>
       </ul>
     </nav>
+
     <header>
       <div class="cal-area">
-        <h3>Basic Calculator</h3>
-        <input type="text" id="num1" placeholder="Enter first Value" />
-        <input type="text" id="num2" placeholder="Enter Second Value" />
+        <h3>Temperature Converter</h3>
+        <input type="text" id="value" placeholder="Enter Value" />
+        <div class="items">
+          <input type="radio" name="temp" id="celsius" />
+          <label for="">Celsius</label>
+          <input type="radio" name="temp" id="fah" />
+          <label for="">Fahrenheit</label>
+        </div>
+
         <div class="btn-wrapper">
-          <button onclick="add()">+</button>
-          <button onclick="sub()">-</button>
-          <button onclick="mult()">x</button>
-          <button onclick="div()">/</button>
+          <button onclick="temp()">Convert</button>
         </div>
       </div>
       <h3>Result</h3>
@@ -34,7 +38,6 @@
         <p id="result"></p>
       </div>
     </header>
-
     <script src="app.js"></script>
   </body>
 </html>
